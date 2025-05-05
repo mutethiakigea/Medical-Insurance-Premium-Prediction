@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+# Change the page config
+st.set_page_config(
+    page_title="Premium App",       # This changes the browser tab title
+    page_icon="💰",                 # You can use an emoji or path to an image
+    layout="centered"
+)
+
 # Load trained model
 model = joblib.load('best_rf_model.pkl')
 
